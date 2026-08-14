@@ -10,6 +10,11 @@
   Robot: 4 motor V5 (11W), cartridge biru 600 RPM
     Kiri  : PORT1, PORT2
     Kanan : PORT9, PORT10
+
+  Semua ukuran di file ini pakai INCI. Alasannya: seluruh dunia VEX pakai
+  inci. Ukuran roda, ukuran lubang C-channel, ukuran lapangan — semuanya.
+  Kalau kamu ngitung pakai cm, kamu bakal konversi bolak-balik terus dan
+  cepat atau lambat salah.
 ----------------------------------------------------------------------------*/
 
 #include "vex.h"
@@ -67,10 +72,15 @@ motor_group kanan(kananDepan, kananBelakang);
 /*
   Angka-angka ini yang bikin fungsi majuJarak() bisa ngitung.
   WAJIB kamu sesuaikan sama robot kamu sendiri, atau hasilnya ngaco.
+
+  Ukuran roda VEX yang umum, tinggal pilih:
+    2.75 → roda kecil, robot lincah
+    3.25 → paling sering dipakai di drivetrain kompetisi
+    4.00 → roda besar, jarak per putaran paling jauh
 */
 
-const double DIAMETER_RODA_MM = 101.6;  // roda 4 inci. Ganti kalau beda.
-const double RASIO_GEAR_LUAR  = 1.0;    // 1.0 = motor langsung ke roda
+const double DIAMETER_RODA_INCI = 4.0;  // Ganti sesuai roda kamu.
+const double RASIO_GEAR_LUAR    = 1.0;  // 1.0 = motor langsung ke roda
 
 /*
   CATATAN soal 600 RPM:
@@ -119,23 +129,27 @@ void majuWaktu(int durasiMs, int kecepatanPersen) {
   derajat motor muter. Jadi kamu nggak perlu beli sensor tambahan.
 
   Logikanya:
-    1. Satu putaran roda = keliling roda (mm)
+    1. Satu putaran roda = keliling roda (inci)
     2. Jarak yang kamu mau  ÷  keliling  =  berapa putaran
     3. Putaran × 360        =  berapa derajat motor harus muter
 
   Karena robot ngitung putaran sendiri, baterai lemah cuma bikin dia lebih
   pelan — bukan lebih pendek.
+
+  Contoh, roda 4 inci:
+    Keliling = 4 × 3,14159 = 12,57 inci
+    Mau maju 24 inci  →  24 ÷ 12,57 = 1,91 putaran
+    1,91 × 360        =  687 derajat
 */
 
-double jarakKeDerajat(double jarakCm) {
-  double kelilingMm = DIAMETER_RODA_MM * 3.14159;
-  double jarakMm    = jarakCm * 10.0;
+double jarakKeDerajat(double jarakInci) {
+  double kelilingInci = DIAMETER_RODA_INCI * 3.14159;
 
-  return (jarakMm / kelilingMm) * 360.0 * RASIO_GEAR_LUAR;
+  return (jarakInci / kelilingInci) * 360.0 * RASIO_GEAR_LUAR;
 }
 
-void majuJarak(double jarakCm, int kecepatanPersen) {
-  double derajat = jarakKeDerajat(jarakCm);
+void majuJarak(double jarakInci, int kecepatanPersen) {
+  double derajat = jarakKeDerajat(jarakInci);
 
   // Reset encoder ke nol dulu, biar hitungannya mulai dari awal
   kiri.setPosition(0, degrees);
@@ -214,7 +228,7 @@ void autonomous(void) {
   // Coba satu-satu. Comment yang lain pakai //, sisain satu yang mau dites.
 
   majuWaktu(1000, 50);          // maju 1 detik, kecepatan 50%
-  // majuJarak(60, 50);         // maju 60 cm, kecepatan 50%
+  // majuJarak(24, 50);         // maju 24 inci = 1 ubin lapangan
   // majuHalus(1500, 80);       // maju 1,5 detik, pelan-pelan sampai 80%
 }
 
