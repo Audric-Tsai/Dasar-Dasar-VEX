@@ -1,0 +1,100 @@
+ODOMETRY
+========================================================================
+
+English · Bahasa Indonesia · 简体中文
+
+------------------------------------------------------------------------
+EN — English
+------------------------------------------------------------------------
+
+What is odometry?
+
+Odometry is how a robot keeps track of its own position and heading
+(its "pose": x, y, and angle) on the field by measuring how much its
+wheels have turned, instead of relying on an outside reference like a
+camera or a beacon. The robot starts from a known point and continuously
+updates its estimated location as it moves — this approach is often
+called "dead reckoning."
+
+What is it used for in VEX?
+
+In VEX, odometry is usually built from small unpowered tracking wheels
+fitted with encoders (sometimes combined with an inertial sensor for
+heading), mounted on the drivetrain. As the robot drives, the encoders
+measure how far the tracking wheels roll, and that data — combined with
+the wheel size and the geometry of where the tracking wheels are
+mounted — is turned into an estimate of the robot's exact position and
+orientation on the field.
+
+This matters because it lets a team write autonomous routines that
+target actual field coordinates ("drive to x=24, y=48") instead of
+simple "drive forward for this many inches" commands. It also lets the
+robot detect and correct drift if a wheel slips or the robot gets
+bumped, which is why most competitive autonomous and skills routines
+rely on it.
+
+Videos:
+  https://www.youtube.com/shorts/JCE7e9eLX6s
+  https://www.youtube.com/shorts/gaUiC3xTMZM
+
+------------------------------------------------------------------------
+ID — Bahasa Indonesia
+------------------------------------------------------------------------
+
+Apa itu odometry?
+
+Odometry adalah cara robot buat ngelacak posisi dan arah hadapnya
+sendiri (disebut "pose": x, y, dan sudut) di lapangan, dengan cara
+ngukur seberapa banyak rodanya udah muter — bukan pakai referensi luar
+kayak kamera atau beacon. Robot mulai dari titik yang udah diketahui,
+terus posisinya terus di-update tiap dia gerak. Cara ini sering disebut
+"dead reckoning."
+
+Buat apa dipakai di VEX?
+
+Di VEX, odometry biasanya dibikin pakai tracking wheel — roda kecil
+tanpa motor yang dipasangin encoder (kadang digabung sama inertial
+sensor buat ngukur arah hadap) — yang dipasang di drivetrain. Pas robot
+jalan, encoder ngukur seberapa jauh tracking wheel-nya muter, terus data
+itu — digabung sama ukuran roda dan posisi pemasangan tracking wheel-nya
+— diolah jadi perkiraan posisi dan arah hadap robot yang akurat di
+lapangan.
+
+Ini penting karena bikin tim bisa nulis rute autonomous yang nargetin
+koordinat lapangan beneran ("jalan ke x=24, y=48"), bukan cuma perintah
+"jalan maju sekian inci." Odometry juga bikin robot bisa nyadar dan
+ngoreksi diri kalau ada roda yang selip atau kesenggol, makanya
+kebanyakan rute autonomous dan skills kompetitif pakai ini.
+
+Video:
+  https://www.youtube.com/shorts/JCE7e9eLX6s
+  https://www.youtube.com/shorts/gaUiC3xTMZM
+
+------------------------------------------------------------------------
+ZH — 简体中文
+------------------------------------------------------------------------
+
+什么是里程计（Odometry）？
+
+里程计是机器人通过测量轮子转动了多少，来持续跟踪自己在场地上的位
+置和朝向（也就是它的“位姿”：x、y 坐标和角度）的方法，而不依赖摄
+像头或信标之类的外部参照物。机器人从一个已知的起始点出发，随着它
+的移动不断更新自己估计的位置——这种方法通常叫做“航位推算”
+（dead reckoning）。
+
+在 VEX 中它有什么用？
+
+在 VEX 里，里程计通常是靠安装在底盘上的小型从动轮（tracking
+wheel）实现的，这些轮子装有编码器（有时还会搭配惯性传感器来测量朝
+向）。机器人移动时，编码器会测量这些从动轮转动的距离，再结合轮子
+的尺寸和从动轮的安装位置，就能计算出机器人在场地上的精确位置和朝
+向。
+
+这很重要，因为它能让团队编写以实际场地坐标为目标的自动阶段程序
+（比如“开到 x=24, y=48”），而不只是简单的“前进多少英寸”这种指
+令。它还能让机器人在轮子打滑或被碰撞时察觉并修正偏差，这也是大多
+数比赛级自动阶段和 skills 程序都依赖它的原因。
+
+视频：
+  https://www.youtube.com/shorts/JCE7e9eLX6s
+  https://www.youtube.com/shorts/gaUiC3xTMZM

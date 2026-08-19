@@ -13,16 +13,16 @@ Open a folder to see the part numbers and what each one does.
 
 | Folder | Category | Contents |
 |---|---|---|
-| [01-Struktur](01-Struktur) | Structure | C-channel, U-channel, angle, bar, plate, gusset, standoff. Aluminium and steel. |
-| [02-Gerak](02-Gerak) | Motion | Shafts, bearings, collars, gears, sprockets, chain. |
-| [03-Roda](03-Roda) | Wheels | Traction, omni, mecanum, anti-static, flex, compression, tank tread. |
-| [04-Hub-Adapter](04-Hub-Adapter) | Hubs & Adapters | VersaHub, VersaHex adapter, spacer hub. |
-| [05-Pengikat](05-Pengikat) | Fasteners | Hex screws, star drive screws, nuts, washers, spacers, retainers, rubber. |
-| [06-Elektronik](06-Elektronik) | Electronics | Brain, battery, motors, cartridges, controller, radio, cables. |
-| [07-Sensor](07-Sensor) | Sensors | Smart sensors and 3-wire sensors. |
-| [08-Pneumatik](08-Pneumatik) | Pneumatics | Cylinders, solenoids, reservoirs, regulators, tubing, fittings. |
-| [09-Mekanisme](09-Mekanisme) | Mechanisms | Linear slides, turntables, lead screws, cams, claws, winches, intake rollers. |
-| [10-Lain-Lain](10-Lain-Lain) | Miscellaneous | Anti-slip mat, zip ties, foam, straps, PET sheet. |
+| [01-Struktur](01-Structure-Struktur-结构件) | Structure | C-channel, U-channel, angle, bar, plate, gusset, standoff. Aluminium and steel. |
+| [02-Gerak](02-Motion-Gerak-传动件) | Motion | Shafts, bearings, collars, gears, sprockets, chain. |
+| [03-Roda](03-Wheels-Roda-轮子) | Wheels | Traction, omni, mecanum, anti-static, flex, compression, tank tread. |
+| [04-Hub-Adapter](04-Hubs-Adapters-Hub-Adapter-轮毂与转接件) | Hubs & Adapters | VersaHub, VersaHex adapter, spacer hub. |
+| [05-Pengikat](05-Fasteners-Pengikat-紧固件) | Fasteners | Hex screws, star drive screws, nuts, washers, spacers, retainers, rubber. |
+| [06-Elektronik](06-Electronics-Elektronik-电子元件) | Electronics | Brain, battery, motors, cartridges, controller, radio, cables. |
+| [07-Sensor](07-Sensors-Sensor-传感器) | Sensors | Smart sensors and 3-wire sensors. |
+| [08-Pneumatik](08-Pneumatics-Pneumatik-气动系统) | Pneumatics | Cylinders, solenoids, reservoirs, regulators, tubing, fittings. |
+| [09-Mekanisme](09-Mechanisms-Mekanisme-机构件) | Mechanisms | Linear slides, turntables, lead screws, cams, claws, winches, intake rollers. |
+| [10-Lain-Lain](10-Miscellaneous-Lain-Lain-其他) | Miscellaneous | Anti-slip mat, zip ties, foam, straps, PET sheet. |
 
 ---
 
@@ -70,16 +70,16 @@ Buka foldernya buat lihat nomor part dan fungsinya satu per satu.
 
 | Folder | Kategori | Isinya |
 |---|---|---|
-| [01-Struktur](01-Struktur) | Struktur | C-channel, U-channel, angle, bar, plate, gusset, standoff. Aluminium dan baja. |
-| [02-Gerak](02-Gerak) | Gerak | Shaft, bearing, collar, gear, sprocket, rantai. |
-| [03-Roda](03-Roda) | Roda | Traction, omni, mecanum, anti-static, flex, compression, tank tread. |
-| [04-Hub-Adapter](04-Hub-Adapter) | Hub & Adapter | VersaHub, VersaHex adapter, spacer hub. |
-| [05-Pengikat](05-Pengikat) | Pengikat | Baut hex, baut star drive, mur, washer, spacer, retainer, karet. |
-| [06-Elektronik](06-Elektronik) | Elektronik | Brain, baterai, motor, cartridge, controller, radio, kabel. |
-| [07-Sensor](07-Sensor) | Sensor | Sensor smart dan sensor 3-wire. |
-| [08-Pneumatik](08-Pneumatik) | Pneumatik | Silinder, solenoid, tabung, regulator, selang, fitting. |
-| [09-Mekanisme](09-Mekanisme) | Mekanisme | Linear slide, turntable, lead screw, cam, claw, winch, intake roller. |
-| [10-Lain-Lain](10-Lain-Lain) | Lain-lain | Anti-slip mat, zip tie, foam, strap, lembaran PET. |
+| [01-Struktur](01-Structure-Struktur-结构件) | Struktur | C-channel, U-channel, angle, bar, plate, gusset, standoff. Aluminium dan baja. |
+| [02-Gerak](02-Motion-Gerak-传动件) | Gerak | Shaft, bearing, collar, gear, sprocket, rantai. |
+| [03-Roda](03-Wheels-Roda-轮子) | Roda | Traction, omni, mecanum, anti-static, flex, compression, tank tread. |
+| [04-Hub-Adapter](04-Hubs-Adapters-Hub-Adapter-轮毂与转接件) | Hub & Adapter | VersaHub, VersaHex adapter, spacer hub. |
+| [05-Pengikat](05-Fasteners-Pengikat-紧固件) | Pengikat | Baut hex, baut star drive, mur, washer, spacer, retainer, karet. |
+| [06-Elektronik](06-Electronics-Elektronik-电子元件) | Elektronik | Brain, baterai, motor, cartridge, controller, radio, kabel. |
+| [07-Sensor](07-Sensors-Sensor-传感器) | Sensor | Sensor smart dan sensor 3-wire. |
+| [08-Pneumatik](08-Pneumatics-Pneumatik-气动系统) | Pneumatik | Silinder, solenoid, tabung, regulator, selang, fitting. |
+| [09-Mekanisme](09-Mechanisms-Mekanisme-机构件) | Mekanisme | Linear slide, turntable, lead screw, cam, claw, winch, intake roller. |
+| [10-Lain-Lain](10-Miscellaneous-Lain-Lain-其他) | Lain-lain | Anti-slip mat, zip tie, foam, strap, lembaran PET. |
 
 ---
 
@@ -129,16 +129,16 @@ VEX 零件分成十个类别，每个类别有自己的文件夹。
 
 | 文件夹 | 类别 | 内容 |
 |---|---|---|
-| [01-Struktur](01-Struktur) | 结构件 | C 型槽、U 型槽、角铁、条板、平板、加强板、支撑柱。铝制和钢制。 |
-| [02-Gerak](02-Gerak) | 传动件 | 传动轴、轴承、轴环、齿轮、链轮、链条。 |
-| [03-Roda](03-Roda) | 轮子 | 摩擦轮、全向轮、麦克纳姆轮、防静电轮、柔性轮、压缩轮、履带。 |
-| [04-Hub-Adapter](04-Hub-Adapter) | 轮毂与转接件 | VersaHub、VersaHex 转接件、垫圈式轮毂。 |
-| [05-Pengikat](05-Pengikat) | 紧固件 | 内六角螺丝、梅花螺丝、螺母、垫圈、隔离柱、固定片、橡胶件。 |
-| [06-Elektronik](06-Elektronik) | 电子元件 | 主控、电池、电机、齿轮盒、手柄、无线模块、线材。 |
-| [07-Sensor](07-Sensor) | 传感器 | 智能传感器和三线传感器。 |
-| [08-Pneumatik](08-Pneumatik) | 气动件 | 气缸、电磁阀、储气罐、调压阀、气管、接头。 |
-| [09-Mekanisme](09-Mekanisme) | 机构件 | 直线滑轨、转盘、丝杆、凸轮、夹爪、绞盘、吸入滚轮。 |
-| [10-Lain-Lain](10-Lain-Lain) | 其他 | 防滑垫、扎带、泡棉、绑带、PET 板。 |
+| [01-Struktur](01-Structure-Struktur-结构件) | 结构件 | C 型槽、U 型槽、角铁、条板、平板、加强板、支撑柱。铝制和钢制。 |
+| [02-Gerak](02-Motion-Gerak-传动件) | 传动件 | 传动轴、轴承、轴环、齿轮、链轮、链条。 |
+| [03-Roda](03-Wheels-Roda-轮子) | 轮子 | 摩擦轮、全向轮、麦克纳姆轮、防静电轮、柔性轮、压缩轮、履带。 |
+| [04-Hub-Adapter](04-Hubs-Adapters-Hub-Adapter-轮毂与转接件) | 轮毂与转接件 | VersaHub、VersaHex 转接件、垫圈式轮毂。 |
+| [05-Pengikat](05-Fasteners-Pengikat-紧固件) | 紧固件 | 内六角螺丝、梅花螺丝、螺母、垫圈、隔离柱、固定片、橡胶件。 |
+| [06-Elektronik](06-Electronics-Elektronik-电子元件) | 电子元件 | 主控、电池、电机、齿轮盒、手柄、无线模块、线材。 |
+| [07-Sensor](07-Sensors-Sensor-传感器) | 传感器 | 智能传感器和三线传感器。 |
+| [08-Pneumatik](08-Pneumatics-Pneumatik-气动系统) | 气动件 | 气缸、电磁阀、储气罐、调压阀、气管、接头。 |
+| [09-Mekanisme](09-Mechanisms-Mekanisme-机构件) | 机构件 | 直线滑轨、转盘、丝杆、凸轮、夹爪、绞盘、吸入滚轮。 |
+| [10-Lain-Lain](10-Miscellaneous-Lain-Lain-其他) | 其他 | 防滑垫、扎带、泡棉、绑带、PET 板。 |
 
 ---
 
